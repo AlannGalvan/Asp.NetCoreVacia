@@ -1,0 +1,34 @@
+﻿@ApiCore_HostAddress = https://localhost:7297
+
+POST {{ApiCore_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name":"walk dog",
+  "isComplete":true
+}
+
+
+###
+
+GET {{ApiCore_HostAddress}}/todoitems
+
+###
+
+GET {{ApiCore_HostAddress}}/todoitems/3
+
+###
+
+PUT {{ApiCore_HostAddress}}/todoitems/2
+Content-Type: application/json
+
+{
+  "name": "feed fish",
+  "isComplete": false
+}
+
+###
+
+DELETE {{ApiCore_HostAddress}}/todoitems/1
+
+###
